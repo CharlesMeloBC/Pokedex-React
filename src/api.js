@@ -1,6 +1,6 @@
 const url ='https://pokeapi.co/api/v2/pokemon'
  
-export const $get = async (limit = 10 , offset=0 )=>{
+export const $get = async (limit, offset)=>{
     let response = await fetch(`${url}?limit=${limit}&offset=${offset}`,{
         method:'GET'
     })

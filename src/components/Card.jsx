@@ -10,7 +10,7 @@ function Card(props) {
             <div className="container" id="containerCard">
                 <div className="row" id="card">
                     {endpoint.map((user, index) => {
-                        return <div className="col-3" key={index}><Pokemon data={user.url} /></div>
+                        return <div id="cards" className="col-4" key={index}><Pokemon data={user.url} /></div>
                     })
                     }
                 </div>
