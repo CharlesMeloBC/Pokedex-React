@@ -1,4 +1,5 @@
 import React, { useEffect} from "react";
+import Details from "./Details";
 import Pokemon from "./Pokemon";
 
 

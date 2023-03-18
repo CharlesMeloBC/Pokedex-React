@@ -63,6 +63,10 @@ body{
 
 }
 
+.card{
+cursor: pointer;
+}
+
 #name{
   display: flex;
   align-items: center;
@@ -123,6 +127,110 @@ input{
   cursor: pointer;
   text-decoration: none;
 }
+
+#boxDetails{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  
+}
+
+.modal-content{
+  background-color: #9106068c;
+  flex-wrap: wrap;
+  width: 110%;
+  display: flex;
+
+}
+
+#image{
+  border-radius:100%;
+  width: 100%;
+
+  display:flex ;
+  align-items:center;
+  justify-content: center;
+
+}
+
+#image img{
+  height: 12rem;
+}
+
+#typesHabilit{
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+
+
+  background-color: rgba(248, 248, 248, 0.8);
+  box-shadow:2px 2px rgba(0, 0, 0, 0.452);
+}
+#type{
+  text-align: center;
+  padding: 1px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+
+#title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(248, 248, 248, 0.8);
+  border-radius: 10px;
+  box-shadow: 2px 2px  black;
+  padding: 5px;
+  margin: 5px;
+}
+#info{
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgba(248, 248, 248, 0.8);
+  padding: 15px;
+  box-shadow:2px 2px rgba(0, 0, 0, 0.452);
+}
+#info div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  background-color: #f7f7f79f;
+}
+#info div div{
+  background-color: #d61414ee;
+  border-radius: 5px;
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  width:100px;
+}
+
+
+#Habilites{
+  background-color: #f7f7f79f;
+  margin: 2px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#H1{
+  background-color: #d61414ee;
+  font-size: 18px;
+  font-style: oblique;
+  color: #ffff;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
 
 /* Pokemons background colors */
 

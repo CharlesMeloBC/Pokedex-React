@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { $getUrls } from "../api";
+import Details from "./Details";
 
 function Pokemon(props) {
     const { data } = props
     const [dataUser, setDataUser] = useState()
     const [value, setValue]= useState(false)
+    const [details, setDetails]= useState(false)
 
     useEffect(() => {
         async function getData() {
@@ -39,11 +41,16 @@ function Pokemon(props) {
     setValue(!isFavorite);
   }
 
+   function clikValueDetails(){  
+    setDetails(!details)
+    
+   }     
+
 
     return (
+            <div onClick={clikValueDetails} data-toggle="modal" data-target=".bd-example-modal-md"  className="" id="containerCard">
 
-            <div className="" id="containerCard">
-                <div className={`card container ${pokemonData.type}`} >
+                <div  className={`card container ${pokemonData.type}`} >
                     <div className="container" style={{ height: "10rem" }} id="containerImg">
                         <img style={{ padding: '10px', width: "8rem" }} src={pokemonData.image} alt="Card image cap"></img>
                     </div>
@@ -55,12 +62,13 @@ function Pokemon(props) {
                     </div>
                     <h6 className="card-footer row bg-transparent">
                         {dataUser && dataUser.types.map((pokeType, index) =>
-                            <div className="col" key={index}>
+                            <div  className="col" key={index}>
                                 <h6 className="row">{pokeType.type.name}</h6>
                             </div>)}
                         #{pokemonData.id}
                     </h6>
                 </div>
+                {details? <Details modalDatas={dataUser} />: ''}
             </div>
         
     )

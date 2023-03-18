@@ -50,17 +50,17 @@ function Pokedex() {
     <div>
       <NavBar />
         <div id="pagination">
-          <div id="arrow"><i onClick={prevPagination} className="bi bi-chevron-left"></i></div>
+          <div onClick={prevPagination} id="arrow"><i  className="bi bi-chevron-left"></i></div>
           <div className="search-box">
             <input onChange={(pokeName)=>setSearch(pokeName.target.value)} type="text" placeholder="search" />
               <a href="#" className="icon">
                 <img onClick={catchValue} className="icon" src={pokeboll} alt="" />
               </a>
           </div>
-          <div id="arrow"><i onClick={nextPagination} className="bi bi-chevron-right"></i></div>
+          <div  onClick={nextPagination} id="arrow"><i className="bi bi-chevron-right"></i></div>
         </div>
         <div>
-          <Card endpoint={endpoint ?? endpoint} />
+          <Card endpoint={endpoint} />
         </div>
     </div>
   )
