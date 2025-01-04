@@ -1,0 +1,289 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #333333;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #dd1818d5, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #dd1818cc, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.scrollbar-black::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+#arrow{
+  height: 40px;
+  width: 20px;
+  background-color: #ffffff70;
+  color: #ffff;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+#pagination{
+
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+#navbarNavDropdown{
+  display: flex;
+  justify-content:end;
+}
+#navbarNavDropdown a {
+  background-color: rgba(255, 0, 0, 0.932);
+  color: #ffff;
+}
+#navbar{
+  background-color:rgba(255, 255, 255, 0.1);
+}
+
+.navbar img{
+  height: 40px;
+}
+
+#containerCard{
+  width: 105%;
+  padding: 20px;
+
+  border:none;
+  border-radius: 5px;
+
+}
+
+.card{
+cursor: pointer;
+}
+
+#name{
+  display: flex;
+  align-items: center;
+  color: #ffff;
+}
+
+#name i{
+  cursor: pointer;
+  color: red;
+}
+#containerImg{
+  display: flex;
+  justify-content:center;
+}
+
+.search-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2c3441;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+.search-box:hover > input{
+  width: 200px;
+  padding: 0 10px;
+}
+.search-box:hover > .icon{
+  background:#536179;
+}
+.icon{
+  transform: rotate(360deg) scale(0.8);
+}
+input{
+  width: 0;
+  border: none;
+  outline: none;
+  padding: 0;
+  background: none;
+  font-size: 1.1rem;
+  transition: 0.5s ease;
+  line-height: 40px;
+  color: #fff;
+}
+.icon{
+  color: #21dfcd;
+  float: right;
+  width: 40px;
+  font-size: 1.3rem;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#boxDetails{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  
+}
+
+.modal-content{
+  background-color: #9106068c;
+  flex-wrap: wrap;
+  width: 110%;
+  display: flex;
+
+}
+
+#image{
+  border-radius:100%;
+  width: 100%;
+
+  display:flex ;
+  align-items:center;
+  justify-content: center;
+
+}
+
+#image img{
+  height: 12rem;
+}
+
+#typesHabilit{
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+
+
+  background-color: rgba(248, 248, 248, 0.8);
+  box-shadow:2px 2px rgba(0, 0, 0, 0.452);
+}
+#type{
+  text-align: center;
+  padding: 1px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+
+#title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(248, 248, 248, 0.8);
+  border-radius: 10px;
+  box-shadow: 2px 2px  black;
+  padding: 5px;
+  margin: 5px;
+}
+#info{
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgba(248, 248, 248, 0.8);
+  padding: 15px;
+  box-shadow:2px 2px rgba(0, 0, 0, 0.452);
+}
+#info div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  background-color: #f7f7f79f;
+}
+#info div div{
+  background-color: #d61414ee;
+  border-radius: 5px;
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  width:100px;
+}
+
+
+#Habilites{
+  background-color: #f7f7f79f;
+  margin: 2px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#H1{
+  background-color: #d61414ee;
+  font-size: 18px;
+  font-style: oblique;
+  color: #ffff;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+
+/* Pokemons background colors */
+
+.fire{
+  background-color: rgba(245, 110, 21, 0.7);
+}
+.grass{
+  background-color: rgb(129, 173, 61, 0.7);
+}
+.normal{
+  background-color: rgb(228, 227, 226, 0.7);
+}
+.water{
+  background-color: rgb(81, 182, 182, 0.7);
+}
+.bug{
+  background-color: rgba(168, 253, 39, 0.7)}
+.poison{
+  background-color: rgba(168, 50, 115, 0.733);
+}
+.electric{
+  background-color: rgb(242, 245, 85, 0.7);
+}
+.ground{
+  background-color: rgba(231, 178, 108, 0.74);
+}
+.fairy{
+  background-color: rgba(252, 155, 171, 0.767);
+}
+.psychic{
+  background-color: rgb(191, 28, 255, 0.7);
+}
+.fighting{
+  background-color: rgb(248, 176, 43, 0.7);
+}
+.rock{
+  background-color: rgb(90, 88, 88, 0.7);
+}
+.ghost{
+  background-color: rgb(236, 50, 143, 0.7);
+}
+.dark{
+  background-color: rgb(102, 93, 93, 0.7);
+}
+.ice{
+  background-color: rgb(170, 243, 248, 0.7);
+}
+.steel{
+  background-color: rgb(68, 97, 105, 0.7);
+}
+.dragon{
+  background-color: rgba(255, 11, 11, 0.466);
+}
+.black{
+  background-color: rgb(26, 25, 25, 0.7);
+}
